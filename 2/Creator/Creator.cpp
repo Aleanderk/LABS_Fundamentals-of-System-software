@@ -9,9 +9,9 @@ struct employee
 	char name[10]; // имя сотрудника
 	double hours; // количество отработанных часов
 };
-int main(int argc, char** argv) {	
+int main(int argc, char** argv) {
 	int n = strtol(argv[2], nullptr, 10);
-	employee* arr = new employee[n];	
+	employee* arr = new employee[n];
 	for (int i = 0; i < n; i++) {
 		employee temp;
 		cin >> temp.num;

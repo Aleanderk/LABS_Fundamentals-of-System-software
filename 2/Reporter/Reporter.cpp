@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 	ifstream in;
 	in.open(argv[1], fstream::binary);
 	out.open(argv[2]);
-	int sum = strtol(argv[3], nullptr, 10);	
+	int sum = strtol(argv[3], nullptr, 10);
 	out << argv[1] << endl;
 	int n = 0;
 	while (!in.eof()) {
@@ -30,6 +30,6 @@ int main(int argc, char** argv) {
 		employee temp;
 		in.read((char*)&temp, sizeof(employee));
 		out << temp.num << " " << temp.name << " " << temp.hours << " " << sum * temp.hours << endl;
-	}	
+	}
 	return 0;
 }
